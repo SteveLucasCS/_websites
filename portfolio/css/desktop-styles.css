@@ -68,12 +68,7 @@ nav {
 
 }
 nav ul {
-  display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: 6.5em 6.5em 6.5em;
-  grid-template-rows: 1.1em 1.1em;
-  justify-content: center;
-  padding: 0em;
+  display: inline-block;
   list-style-type: none;
 }
 nav ul li {
@@ -108,6 +103,6 @@ h1 {
 }
 
 .desktop { display: none; }
-.tablet {dispaly: none;}
+.tablet { dispaly: none; }
 
 /* MOBILE STYLING ENDS */
