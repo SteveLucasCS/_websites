@@ -3,11 +3,31 @@
 <!-- Personal Portolio Assignment -->
 <html lang="en">
 <head>
-     <link rel="stylesheet" href="css/portfoliostyles05.css">
-     <title>Steve Lucas Portfolio</title>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" href="favicon.ico">
+    <!-- Portrait phones -->
+    <link rel="stylesheet" href="css/mobile-styles.css"
+        media="screen and (max-width: 480px)">
+    <!-- Landscape phones (small and large)-->
+    <link rel="stylesheet" href="css/mobile-wide-styles.css"
+        media="screen and (min-width: 481px) and (max-width: 1023px)">
+    <!-- Landscape tablets and 720p 16:9 laptops -->
+    <link rel="stylesheet" href="css/tablet-styles.css"
+        media="screen and (min-width: 768px) and (max-width: 1366px)
+        and (max-height: 1300px)">
+    <!-- 16:9 1080p + laptops/desktops -->
+    <link rel="stylesheet" href="css/desktop-styles.css"
+        media="screen and (min-width: 1367px)">
+
+    <!-- 21:9 desktops (overwrite any previously imported stylesheet) -->
+    <link rel="stylesheet" href"css/ultrawide-styles.css"
+        media="screen and (min-width: 2560px) and (max-height: 1080px)">
+    <link rel="stylesheet" href"css/utrawide-styles.css"
+        media="screen and (min-width: 3440px) and (max-height: 1440px)">
+
+
+    <title>Steve Lucas Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -15,8 +35,7 @@
         <!-- Use headers for website name or logos -->
         <header>
             <a href="index.html">
-            <img src="images/headshot.png"
-            alt="Picture of Steve Lucas"></a>
+            <img src="images/headshot.png" alt="Picture of Steve Lucas"></a>
 
             <div id="headerText">
                 <h1><span class="myname">Steve Lucas</span></h1>
@@ -32,50 +51,39 @@
 
         <!-- nav links to other pages on the site -->
         <div class="mobile">
-            <nav>
-                <ul>
-                    <li><a href="index.html">About Me</a></li>
-                    <li><a href="index.html">Skills</a></li>
-                    <li><a href="template/portfolio.html">Education</a></li>
-                    <li><a href="index.html">Work Experience</a></li>
-                    <li><a href="template/portfolio.html">Résumé</a></li>
-                    <li><a href="template/portfolio.html">Contact Information</a></li>
-                </ul>
-            </nav>
-    </div> <!--end class mobile -->
+            <div class="ul2x3">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="index.html">Skills</a></li>
+                        <li><a href="template/portfolio.html">Education</a></li>
+                        <li><a href="index.html">Work Experience</a></li>
+                        <li><a href="template/portfolio.html">Résumé</a></li>
+                        <li><a href="template/portfolio.html">Contact Information</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- end 2x3navbar class -->
+        </div> <!--end class mobile -->
+        <!-- nav links to other pages on the site -->
+        <div class="mobile-wide">
+            <div class="ul1x6">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">About Me</a></li>
+                        <li><a href="index.html">Skills</a></li>
+                        <li><a href="template/portfolio.html">Education</a></li>
+                        <li><a href="index.html">Work Experience</a></li>
+                        <li><a href="template/portfolio.html">Résumé</a></li>
+                        <li><a href="template/portfolio.html">Contact Information</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- end 1x6navbar class -->
+        </div> <!--end class mobile -->
+
 
         <!-- Use main for the main content of the webpage -->
         <div id="main">
-
-            <h1>My Background</h1>
-                <p>With experience in the world of computer science, engineering,
-                law enforcement, and business.<br>I am a unique and driven professional
-                with a passion for learning. I am puruing a career in the computer
-                science field, with a focus on software engineering and Information
-                security.<br>Science and technology have always been my biggest passions,
-                and the world of computers provides a new challenge and learning
-                experience every day.<br>My goal is to make the world a better place
-                through the power of innovation and creativity.</p>
-            <h1>Strengths</h1>
-                <p>My drive to learn and grow every day is my strongest asset.
-                I am always enthusiastic to put in the work to get the job done,
-                and apply this same work ethic to all aspects of my life.<br>My passion
-                for technology lends itself to a natural aptitude for the field.
-                I pride myself in being a cooperative, teamplayer, who always puts others
-                first.<br>In addition to my technical knowledge, I also have strong
-                interpersonal skills and am an empathetic and understanding leader.</p>
-            <h1>Technology</h1>
-                <p>I have experience in a broad variety of technologies in both my
-                personal and professional life. Some of of which are:</p>
-                <ul>
-                    <li>Office Software - MS Office, Salesforce, SQL</li>
-                    <li>Software Engineering - C, Java, JavaScript, and Python</li>
-                    <li>Mechanical Engineering - CAD (Creo 3), Machining, Welding, Casting</li>
-                    <li>Information Security</li>
-                    <li>IT Support - Administration, Software, Hardware</li>
-                </ul>
-                <p>To learn more about my skills, click the related links.</p>
-            </div>
+        </div>
             <!--end main -->
 
         <!-- Use the footer to add webpage footer content -->

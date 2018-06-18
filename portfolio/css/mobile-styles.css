@@ -32,9 +32,11 @@ header {
 
 /* Style for text within the header element */
 #headerText {
-    padding-left:10%;
-    margin-left: 25%;
+    margin-left: 0;
+    text-align: center;
 }
+
+
 
 
 /* Style for myname class NOT using web-hosted font.
@@ -51,23 +53,33 @@ header {
     font-size: 1.8em;
 }
 
-/* Styles the image in the header (headshot.png) */
+/* Styles the image in the header (headshot.png) This is a retina image. */
 header img {
     object-fit: contain;
     object-position: left;
     position: absolute;
     left: 0;
     top: 0;
-    width: 120px;
+    width: 350px;
+    max-width: 30%;
     max-height: 100%;
+    height: auto;
+    max-height: 100%;
+    display: inline-block;
 }
 
-
-nav {
+.small {
+    display: block;
     width: 100%;
+    margin: 0 0;
+}
+.small nav {
+    width: 100%;
+    margin: 0 auto;
 
 }
-nav ul {
+
+.small nav ul {
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: 6.5em 6.5em 6.5em;
@@ -107,6 +119,12 @@ h1 {
     margin-top: 0em;
 }
 
+/* Style for 'date' format text */
+.date {
+    text-align: center;
+}
+
+.mobile-wide {display: none;}
 .desktop { display: none; }
 .tablet {dispaly: none;}
 
