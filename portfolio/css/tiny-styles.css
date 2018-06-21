@@ -111,11 +111,6 @@ h1 {
     margin-top: 0em;
 }
 
-/* Style for 'date' format text */
-.date {
-    text-align: center;
-}
-
 .mobile-wide {display: none;}
 .desktop { display: none; }
 .tablet {dispaly: none;}
