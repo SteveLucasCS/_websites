@@ -12,7 +12,9 @@ body {
     padding: 1%;
 }
 
-
+.header {
+    background-color: rgb(0, 0, 153);
+}
 /* Dropdown navbar for mobile devices */
 @media only screen and (max-width: 999px) {
     WRITE ME PLEASE
@@ -33,7 +35,9 @@ body {
         flex-wrap: nowrap;
         align-items: center;
         font-size: 1.4em;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        margin-bottom: 0;
     }
 
     /* Name text in the header */
@@ -43,6 +47,8 @@ body {
         margin: 0;
         margin-left: 5%;
         padding: 0;
+        color: rgb(217, 217, 217);
+
     }
     /* Navbar styling */
     /* Navbar consists of list of links to other pages */
@@ -53,6 +59,7 @@ body {
 
     nav a {
         text-decoration: none;
+        color: rgb(217, 217, 217);
     }
     nav ul {
         display: flex;
@@ -87,20 +94,24 @@ body {
     }
     /* Portrait image (circle, oriented left with text to the right) */
     #portrait {
-        width: 250px;
+        width: 200px;
         max-width: 20%;
         height: 50%;
         border-radius: 200px;
         margin: 0 0;
     }
     .main p {
-        font-size: 1.5em;
-        text-align: right;
-        margin: 3%;
+        font-size: 1.8em;
+        text-align: center;
+        margin: 6%;
+        color: rgb(0, 0, 128);
     }
-
     /* 4 boxes with an image as background for each of them, linking to
     the skills page */
+    .main .container {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
     .main .container ul {
         list-style-type: none;
         width: 100%;
@@ -111,9 +122,21 @@ body {
 
     .main .container ul li {
         width: 22.5%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 0.5em solid rgb(0, 0, 153);
     }
     .main .container ul li img {
         width: 100%;
         height: auto;
+    }
+
+    .main .container ul li a {
+        text-decoration: none;
+         color: rgb(0, 0, 153);
+    }
+    .main .container ul li h2 {
+        text-align: center;
     }
 }
