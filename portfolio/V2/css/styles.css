@@ -12,6 +12,11 @@ body {
     padding: 0;
 }
 
+section {
+    padding: 0;
+    margin: 0;
+}
+
 .header {
     background-color: rgb(0, 0, 153);
 }
@@ -544,7 +549,7 @@ body {
     .desktop { display: none; }
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
 
     .header {
         display: flex;
@@ -567,8 +572,8 @@ body {
         padding: 0;
         color: #FFFFFF;
         font-size: 1.5em;
-
     }
+
     /* Navbar styling */
     /* Navbar consists of list of links to other pages */
     nav {
