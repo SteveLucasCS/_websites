@@ -1,0 +1,108 @@
+/* @author Steve Lucas
+* Styling for Midterm Review Website
+* Version: 7/4/2018 */
+
+/* Mobile first cascading style. Desktop breakpoint is at 900px */
+
+/* Styles the pagewrapper div, that contains all content on the page, to be 100% width of the body*/
+#pagewrapper {
+    width: 100%;
+}
+
+/* Styles the image in the header to be 100% the width of pagewrapper */
+#pagewrapper header img {
+    width: 100%;
+}
+
+/* Removes bullet points from nav list */
+#pagewrapper nav ul {
+    list-style-type: none;
+}
+
+/* Styles Article Heading */
+#pagewrapper h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styles heading of the 2 main paragraphs */
+#pagewrapper h2 {
+    font-size: 1.2em;
+}
+
+/* Styles the subheading */
+#pagewrapper h3 {
+    font-weight: normal;
+    margin: 0;
+    text-decoration: underline;
+}
+
+/* Centers footer and gives it a gray background */
+#pagewrapper footer {
+    text-align: center;
+    background-color: rgb(0,0,0,0.2);
+}
+
+/* hide aside on mobile viewports */
+#pagewrapper main aside {
+    display: none;
+}
+
+/*Desktop breakpoint*/
+@media only screen and (min-width: 900px) {
+
+    /* Styles the pagewrapper div that contains all content on the page */
+    #pagewrapper {
+        margin: auto;
+        width: 80%;
+        font-size: 1.2em;
+    }
+
+    /* Styles navbar to be same width as article */
+    #pagewrapper nav {
+        width: 60%;
+        padding-left: 5%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+
+    /* Styles navbar to be horizontal list with no bullet points. */
+    #pagewrapper nav ul {
+        list-style-type: none;
+        display: inline-flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* each list element is 30% of the navbar's width, and text is aligned center. */
+    #pagewrapper nav ul li {
+        width: 30%;
+        text-align: center;
+    }
+
+    /* Hyperlink styling removed, text color changed to orange to match banner image */
+    #pagewrapper nav ul li a {
+        text-decoration: none;
+        color: rgb(255, 102, 0);
+    }
+
+    /* Styles the article to be 60% of the page width (width+padding) */
+    #pagewrapper main article {
+        display: inline-block;
+        width: 55%;
+        margin: 0;
+        padding-left: 5%;
+    }
+
+    /* Styles the aside to float right with a width of 40%, and an orange background */
+    #pagewrapper main aside {
+        display: inline-block;
+        margin: auto;
+        float: right;
+        width: 35%;
+        background-color: rgb(255,128,0,0.7);
+    }
+}

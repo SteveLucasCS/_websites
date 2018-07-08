@@ -1,0 +1,842 @@
+/* Import Roboto font from google fonts */
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+/* All content on a page is within the body container */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(0, 0, 153);
+}
+
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#footer-nav {
+    width: 100%;
+    background-color: rgb(0,0,153);
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+#footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#footer-nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#footer-nav ul li {
+    text-align: center;
+}
+
+/* Dropdown navbar for mobile devices */
+@media only screen and (max-width: 999px) {
+
+    /* mobile-only header and navbar */
+    .mobile-header {
+        margin: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 153);
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-header h1 {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .mobile-header a {
+        text-decoration: none;
+        color:#FFFFFF;
+    }
+
+    .mobile-dropdown {
+        display: inline-block;
+        position: relative;
+    }
+
+    /* Dropdown button */
+    .drop-button {
+        background-color: #FFFFFF;
+        font-size: 1em;
+        border-style: none;
+        color: rgb(0, 0, 153);
+    }
+
+    /* dropdown-content is hidden until button is pressed */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFFFFF;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        right: 0;
+        z-index: 1;
+        padding: 1em;
+        min-width: 8em;
+    }
+
+    .dropdown-content a {
+        color: rgb(0, 0, 153);
+        display: block;
+        text-align: center;
+        padding-bottom: 0.3em;
+        padding-top: 0.3em;
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgb(0, 0, 153);
+        color: #FFFFFF;
+    }
+
+    /* called by openDropdown() to display dropdown content */
+    .show { display: block; }
+
+
+    /******************************************************************
+    * main body of content
+    ******************************************************************/
+    .main {
+        margin: 0 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main article h2 {
+        color: rgb(0,0,153);
+        font-size: 1.3em;
+        text-align: left;
+        margin-left: 5%;
+    }
+    /* Index page main content ***************************************/
+    .mobile-only section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2%;
+    }
+
+    /* big ugly picture on the homepage */
+    .mobile-only section figure {
+        padding: 0;
+        margin: 0;
+        padding-left: 3%;
+
+    }
+    .mobile-only section figure img {
+        height: 130px;
+        border-radius: 20%;
+        width: auto;
+        max-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mobile-only section p {
+        text-align: center;
+        padding: 5% 1em;
+        margin: 0;
+        padding-left: 0.5em;
+    }
+
+    /* Skills section */
+    section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    section ul li a {
+        text-decoration: none;
+        color: rgb(0,0,153);
+    }
+
+    section ul li a h2 {
+        text-decoration: underline;
+        margin-bottom: 0;
+        padding-left: 5%;
+        padding-bottom: 0em;
+        padding-top: 0.2em;
+        font-size: 1.4em;
+        margin-top: 0;
+    }
+
+    section ul li a p {
+        color: #000000;
+        text-align: left;
+        margin-top: 0.5em;
+        margin-left: 10%;
+        font-size: 1em;
+    }
+
+    section ul li a:hover h2{
+        background-color: rgb(0,0,153);
+        color: #FFFFFF;
+    }
+
+
+    /* Education page main content ***********************************/
+    #education-container {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    /* header contains headers related to school on education page */
+    .header-container {
+    }
+
+    .header-container h3 {
+        margin: 0 auto;
+    }
+
+    .header-container h4 {
+        margin: 0.4em auto;
+    }
+
+    .header-container h2 {
+        margin-bottom: 0.5em;
+    }
+
+    #gvsu-container {
+        padding-bottom: 0.5em;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(0, 0, 128);
+    }
+
+    /* Contains paragrph of text */
+    .par-container {
+        margin: 1em auto;
+    }
+    .par-container p {
+        text-align: left;
+        margin: auto 5%;
+    }
+
+
+    /*** About page ****************************************************/
+
+    .about-text {
+        display: none;
+    }
+    .expand {display: inline;}
+
+    #about-page section article h2 {
+        font-size: 1.2em;
+        margin: 5% 2%;
+        margin-bottom: 3%;
+        color: rgb(0, 0, 153);
+    }
+
+    #about-page article p { margin: 0 5%; font-size: 1em; }
+
+    #about-page article section ul { margin: 2% 5%; margin-left: 10%; }
+
+    #about-page section ul li { list-style-type: disc; font-size: 0.8em; }
+
+    #about-page article h3 {
+        margin: 0;
+    }
+    #about-page article h3 a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 0.8em;
+        margin-left:5%;
+        margin-top: 0;
+    }
+
+    #about-page article h3 a span {
+        text-decoration: underline;
+        color: rgb(0, 0, 153);
+    }
+
+    .footer { margin-top: 3%; }
+
+    /********* Hidden Elements *****************************************/
+    /*tablet and desktop header is hidden */
+    .header{ display: none; }
+    /* school logos hidden */
+    .logo { display: none; }
+    .tablet { display: none; }
+    .skills-image { display: none; }
+}
+
+/* Breakpoint for horizontal navbar (800px) */
+@media only screen and (min-width: 1000px) and (max-width: 1919px) {
+
+    /**********************************************************************
+    * Header styling
+    * @parent: body
+    * @Contains: h1 ("Steve Lucas") and navbar (ul)
+    **********************************************************************/
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 1.2em;
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        margin-bottom: 0;
+        justify-content: space-around;
+    }
+
+    /* Name text in the header */
+    .header h1 {
+        width: 10em;
+        text-align: left;
+        margin: 0;
+        margin-left: 2%;
+        padding: 0;
+        color: #FFFFFF;
+        font-size: 1.5em;
+
+    }
+    /* Navbar styling */
+    /* Navbar consists of list of links to other pages */
+    nav {
+        width: 100%;
+        margin-right: 2%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    /**********************************************************************
+    * Main styling
+    * @parent: body
+    * @Contains: portrai img, ul of boxes for each skill/specialty
+    **********************************************************************/
+    .main { display: block; }
+
+    .main section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3em;
+        padding-top: 0em;
+    }
+
+    /* Index page (home) ****************************************************/
+    /* Portrait image (circle, oriented left with text to the right) */
+    .main figure {
+        padding: 0;
+        margin: 0;
+        width: 200px;
+        max-width: 20%;
+    }
+
+    #portrait {
+        width: 200px;
+        max-width: 100%;
+        height: 50%;
+        border-radius: 200px;
+        margin: 0 0;
+    }
+
+    .main p {
+        font-size: 1.8em;
+        text-align: center;
+        margin: 6%;
+        color: rgb(0, 0, 128);
+    }
+    /* 4 boxes with an image as background for each of them, linking to
+    the skills page */
+    .main section {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .main section ul {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .main section ul li {
+        width: 22.5%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 0.5em solid rgb(0, 0, 153);
+        overflow: hidden;
+    }
+    .main section ul li img {
+        width: 100%;
+        height: 69%;
+    }
+
+    .main section ul li a {
+        text-decoration: none;
+         color: rgb(0, 0, 153);
+    }
+    .main section ul li h2 {
+        text-align: center;
+        height: 16%;
+    }
+
+    /* Education page *******************************************************/
+    #education-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        color: rgb(0, 0, 128);
+
+    }
+
+    #gvsu-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #lssu-container {
+        width: 100%;
+        height: auto;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+    }
+
+    article h3 {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        width: 284px;
+        height: 224px;
+        margin: auto;
+    }
+
+    .logo img {
+        width: 100%;
+        margin: auto;
+    }
+
+    #gvsu-logo {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #lssu-logo {
+        width: 224px;
+        height: 224px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* contains headers and img related to school on education page */
+    .header-container {
+        width: auto;
+        margin: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* contains text-block related to school on education page */
+    .par-container {
+        font-size: 0.8em;
+    }
+
+    .par-container p {
+        margin-top: 1em;
+        text-align: justify;
+    }
+
+    /*** About page styling *********************************************/
+
+    #about-page { margin: 2%; }
+
+    #about-page section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-page section p {
+        margin: 1em;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+
+    #about-page section h2 {
+        font-size: 2em;
+        margin: 0;
+        color: rgb(0, 0, 153);
+    }
+
+
+    #about-page section .tablet ul {
+        list-style-type: disc;
+        display: inline;
+        margin-left: 0;
+
+    }
+
+        #about-page section .tablet ul li h3 {
+        text-align: left;
+        margin-left: 5%;
+        font-size: 1.8em;
+        color: rgb(0,0,153);
+    }
+
+    #about-page section .tablet ul li p {
+        margin-left: 10%;
+    }
+
+    #about-page section .tablet ul li {
+        border: none;
+        width: 100%;
+    }
+
+    #about-page section h3 a {
+        text-decoration: none;
+        color: #000000;
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    #about-page section h3 a span {
+        text-decoration: underline;
+        color: rgb(0, 0, 153);
+    }
+
+    /**** Skills page ************************************************/
+    #skills-text p {
+        color: #000000;
+        text-align: left;
+        font-size: 1em;
+        margin: 1em 4em;
+    }
+
+    #skills-text h2 {
+        color: rgb(0, 0, 153);
+        margin-left: 1em;
+    }
+
+    #skills-text p span {
+        color: rgb(0, 0, 153);
+        font-weight: bold;
+    }
+
+    /* other viewport styles hidden */
+    .mobile-only { display: none; }
+    .desktop { display: none; }
+    #skills-text {display: none;}
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 1.2em;
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        margin-bottom: 0;
+        justify-content: space-around;
+    }
+
+    /* Name text in the header */
+    .header h1 {
+        width: 10em;
+        text-align: left;
+        margin: 0;
+        margin-left: 2%;
+        padding: 0;
+        color: #FFFFFF;
+        font-size: 1.5em;
+    }
+
+    /* Navbar styling */
+    /* Navbar consists of list of links to other pages */
+    nav {
+        width: 100%;
+        margin-right: 2%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    /**********************************************************************
+    * Main styling
+    * @parent: body
+    * @Contains: portrai img, ul of boxes for each skill/specialty
+    **********************************************************************/
+    .main {
+        display: block;
+    }
+
+    .main section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3em;
+        padding-top: 0em;
+    }
+
+    /* Index page (home) ****************************************************/
+    /* Portrait image (circle, oriented left with text to the right) */
+    #portrait {
+        width: 200px;
+        max-width: 20%;
+        height: 50%;
+        border-radius: 200px;
+        margin: 0 0;
+    }
+    .main p {
+        font-size: 1.8em;
+        text-align: center;
+        margin: 6%;
+        color: rgb(0, 0, 128);
+    }
+    /* 4 boxes with an image as background for each of them, linking to
+    the skills page */
+    .main section {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .main section ul {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .main section ul li {
+        width: 22.5%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 0.5em solid rgb(0, 0, 153);
+        overflow: hidden;
+    }
+    .main section ul li img {
+        width: 100%;
+        height: 69%;
+    }
+
+    .main section ul li a {
+        text-decoration: none;
+         color: rgb(0, 0, 153);
+    }
+    .main section ul li h2 {
+        text-align: center;
+        height: 16%;
+    }
+
+    /* Education page *******************************************************/
+    #education-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        color: rgb(0, 0, 128);
+
+    }
+
+    #gvsu-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #lssu-container {
+        width: 100%;
+        height: auto;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+    }
+
+    article h3 {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        width: 240px;
+        height: 200px;
+        margin-left: 10%;
+        padding: 0;
+    }
+
+
+    #gvsu-logo {
+        height: 140px;
+        width: 240px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    #lssu-logo {
+        height: 200px;
+        width: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    /* contains headers and img related to school on education page */
+    .header-container {
+        width: auto;
+        margin: auto;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    /* contains text-block related to school on education page */
+    .par-container {
+        font-size: 0.8em;
+    }
+
+    .par-container p {
+        margin-top: 1em;
+        text-align: justify;
+    }
+
+    /*** About page styling *********************************************/
+
+    #about-page { margin: 2%; }
+
+    #about-page section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-page section p {
+        margin: 1%;
+        margin-left: 8%;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 0;
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+
+    #about-page section h1 {
+        font-size: 1.8em;
+        margin: 0;
+        margin-left: 3%;
+        color: rgb(0, 0, 153);
+        text-align: left;
+        width: 100%;
+    }
+
+
+    #about-page section .tablet ul {
+        list-style-type: disc;
+        display: inline;
+        margin-left: 0;
+
+    }
+
+    #about-page section .tablet ul li h2 {
+        text-align: left;
+        margin-left: 5%;
+        font-size: 1.2em;
+        color: rgb(0,0,153);
+    }
+
+    #about-page section .tablet ul li p {
+        margin-left: 10%;
+    }
+
+    #about-page section .tablet ul li {
+        border: none;
+        width: 100%;
+    }
+
+    #about-page section h2 a {
+        text-decoration: none;
+        color: #000000;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    #about-page section h2 a span {
+        text-decoration: underline;
+        color: rgb(0, 0, 153);
+    }
+
+
+    .mobile-only { display: none; }
+}
