@@ -1,0 +1,98 @@
+/*@author Steve Lucas - CIS258 Midterm Exam Stylesheet */
+
+/* Styles coffe-banner image to appear 100% of the viewports width or
+* it's native resolution as maximum. Will not upscale. */
+header img {
+    width: 100%;
+    max-width: 1500px; /* Native resolution of banner image */
+    height: auto;
+    max-height: 515px;
+}
+
+/* Styles background color and text color of the body */
+body {
+    background-color: #f0d0a7;
+    color: #592800;
+    font-family: verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Styles h1 and h2 headers to a GREEN text color */
+h1, h2 { color: #425503; }
+
+/* Styles background color of the asided container */
+aside { background-color: #f1e1ca; }
+
+/* Styles font size of h1 text */
+h1 { font-size: 1em; }
+
+/* Styles font size of h2 text */
+h2 {font-size: 0.9em; }
+
+/* Hides phone-desktop class on the mobile viewport */
+.phone-desktop { display: none; }
+
+/* Styles for larger viewports */
+/* Breakpoint can be lower, but it looks the best at this breakpoint */
+@media only screen and (min-width: 879px) {
+    /* Styles the width of the outer wrapper and centers it */
+    #index-page {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Styles article to be the left column of the page */
+    article {
+        display: inline-block;
+        width: 55%;
+        height: auto;
+    }
+
+    /* Styles the aside box to be the right column of the page */
+    aside {
+        width: 40%;
+        height: auto;
+        float: right;
+        display: inline-block;
+        padding: 1em 0; /* Added to match screen capture */
+        margin-top: 1em; /* Added to match screen capture */
+    }
+
+    /* Adds padding to h2 in aside to match the screencapture */
+    aside h2 { margin-left: 1em; }
+
+    /* Styles the footer containing the copyright */
+    footer {
+        clear: both;
+        padding: 0.1em;
+        background-color: #3b4e09;
+        color: #f0d0a7;
+        text-align: center;
+    }
+
+    /* Styles h1 to be larger on desktops */
+    h1 { font-size: 2em; }
+
+    /* Styles h2 to be larger on desktops */
+    h2 { font-size: 1.2em; }
+
+    /* Hide phone number hyperlink on desktop */
+    .phone-mobile { display: none; }
+
+    /* Display phone-desktop text */
+    .phone-desktop {display: inline; }
+
+    /* Styles unclicked hyperlinks */
+    a:link { color: #d71f21; }
+
+    /* Styles visited links */
+    a:visited {color: #3b4e00; }
+
+    /* Styles links as they are hovered */
+    a:hover { color: #231002; }
+
+    /* Styles active links */
+    a:active {color: #f6821d; }
+
+    /* Removes underline from all hyperlinks */
+    a { text-decoration: none; }
+}
