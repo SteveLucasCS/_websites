@@ -55,6 +55,19 @@ section {
     text-align: center;
 }
 
+/* Styles tables on skills page */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.desktop {display: none;}
+.tablet {display: none;}
 /* Dropdown navbar for mobile devices */
 @media only screen and (max-width: 999px) {
 
@@ -555,28 +568,100 @@ section {
         color: rgb(0, 0, 153);
     }
 
-    /**** Skills page ************************************************/
-    #skills-text p {
+    /******************************************************************
+    * main body of content
+    ******************************************************************/
+    .main {
+        margin: 0 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main article h2 {
+        color: rgb(0,0,153);
+        font-size: 1.3em;
+        text-align: left;
+        margin-left: 5%;
+    }
+    /* Index page main content ***************************************/
+    .mobile-only section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2%;
+    }
+
+    /* big ugly picture on the homepage */
+    .mobile-only section figure {
+        padding: 0;
+        margin: 0;
+        padding-left: 3%;
+
+    }
+    .mobile-only section figure img {
+        height: 130px;
+        border-radius: 20%;
+        width: auto;
+        max-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mobile-only section p {
+        text-align: center;
+        padding: 5% 1em;
+        margin: 0;
+        padding-left: 0.5em;
+    }
+
+    /* Skills section */
+    section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    section ul li a {
+        text-decoration: none;
+        color: rgb(0,0,153);
+    }
+
+    section ul li a h2 {
+        text-decoration: underline;
+        margin-bottom: 0;
+        padding-left: 5%;
+        padding-bottom: 0em;
+        padding-top: 0.2em;
+        font-size: 1.4em;
+        margin-top: 0;
+    }
+
+    section ul li a p {
         color: #000000;
         text-align: left;
+        margin-top: 0.5em;
+        margin-left: 10%;
         font-size: 1em;
-        margin: 1em 4em;
     }
 
-    #skills-text h2 {
-        color: rgb(0, 0, 153);
-        margin-left: 1em;
+    section ul li a:hover h2{
+        background-color: rgb(0,0,153);
+        color: #FFFFFF;
     }
 
-    #skills-text p span {
-        color: rgb(0, 0, 153);
-        font-weight: bold;
+    .skills-article h2 {
+        width: 10%;
+        display: block;
     }
+
+    .skills-article section {
+        width: 90%;
+    }
+
 
     /* other viewport styles hidden */
     .mobile-only { display: none; }
     .desktop { display: none; }
-    #skills-text {display: none;}
+    .main article .desktop {display: none;}
 }
 
 @media only screen and (min-width: 1920px) {
@@ -627,6 +712,87 @@ section {
         padding: 0;
         margin: 0;
     }
+
+    /******************************************************************
+    * main body of content
+    ******************************************************************/
+    .main {
+        margin: 0 2%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main article h2 {
+        color: rgb(0,0,153);
+        font-size: 1.3em;
+        text-align: left;
+        margin-left: 5%;
+    }
+    /* Index page main content ***************************************/
+    .mobile-only section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2%;
+    }
+
+    /* big ugly picture on the homepage */
+    .mobile-only section figure {
+        padding: 0;
+        margin: 0;
+        padding-left: 3%;
+
+    }
+    .mobile-only section figure img {
+        height: 130px;
+        border-radius: 20%;
+        width: auto;
+        max-height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mobile-only section p {
+        text-align: center;
+        padding: 5% 1em;
+        margin: 0;
+        padding-left: 0.5em;
+    }
+
+    /* Skills section */
+    section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    section ul li a {
+        text-decoration: none;
+        color: rgb(0,0,153);
+    }
+
+    section ul li a h2 {
+        text-decoration: underline;
+        margin-bottom: 0;
+        padding-left: 5%;
+        padding-bottom: 0em;
+        padding-top: 0.2em;
+        font-size: 1.4em;
+        margin-top: 0;
+    }
+
+    section ul li a p {
+        color: #000000;
+        text-align: left;
+        margin-top: 0.5em;
+        margin-left: 10%;
+        font-size: 1em;
+    }
+
+    section ul li a:hover h2{
+        background-color: rgb(0,0,153);
+        color: #FFFFFF;
+    }
+
 
     /**********************************************************************
     * Main styling
@@ -837,6 +1003,19 @@ section {
         color: rgb(0, 0, 153);
     }
 
+    .main .skills-article h2 {
+        font-size: 2em;
+        width: 100%;
+        display: block;
+    }
+
+    .main section .desktop {
+        display: block;
+        width: 100%;
+    }
+
+
 
     .mobile-only { display: none; }
+    article .mobile-table {display: none;}
 }
