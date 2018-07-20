@@ -109,6 +109,21 @@ label { display: block; }
 /* Style rule for unordered lists within a form */
 form ul { list-style-type: none; }
 
+/* Style rule for the video class (contains video element)*/
+.video {
+	padding: 1em;
+	text-align: center;
+}
+
+/* Style rule for the video element */
+video {
+	border: 0.5em ridge #ffffff;
+	height: auto;
+	max-width: 100%;
+}
+
+
+
 /* Style rule for checkboxes */
 .chkbx { display: inline-block; }
 
@@ -405,7 +420,7 @@ form ul { list-style-type: none; }
 
 	/* Desktop style for paragraphs within a form */
 	form p {color: #000000;}
-	
+
 } /* End of Desktop media query */
 
 /* Style rules for psuedo-classes */
