@@ -99,6 +99,34 @@ footer a {
 	color: #FFFFFF;
 	text-decoration: none;
 }
+
+/* Style rule for input, select, and textarea form elements */
+input, select, textarea { display: block; margin-bottom: 1em; }
+
+/* Style rule for label elements */
+label { display: block; }
+
+/* Style rule for unordered lists within a form */
+form ul { list-style-type: none; }
+
+/* Style rule for the video class (contains video element)*/
+.video {
+	padding: 1em;
+	text-align: center;
+}
+
+/* Style rule for the video element */
+video {
+	border: 0.5em ridge #ffffff;
+	height: auto;
+	max-width: 100%;
+}
+
+
+
+/* Style rule for checkboxes */
+.chkbx { display: inline-block; }
+
 /* Style rule specifies not to display the equip class */
 .equip { display: none; }
 
@@ -230,6 +258,42 @@ footer a {
 		margin: 1em;
 	}
 
+	/* Style for table element */
+	table {
+		border: 0.1em solid #000000;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	/* Style for table heading and table data cells */
+	th, td {
+		border: 0.1em solid #000000;
+		padding: 1em;
+	}
+
+	th {
+		background-color: #1d1d1c;
+		color: #ffffff;
+	}
+
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding-bottom: 0.5em;
+	}
+
+	/* Tablet style rule for Label elements */
+	label {
+		float: left;
+		padding-right: 0.5em;
+		text-align: right;
+		width: 10em;
+	}
+
+	/* Tablet Style rule for btn class */
+	.btn {margin-left: 12em;	}
 } /* End of tablet media query */
 
 /* Media Query for desktop viewport targets screens with a minimum width of 830px */
@@ -237,6 +301,10 @@ footer a {
 	/* Style specifies a width for container */
 	#container {
 		background-color: #1D1D1C;
+	}
+
+	main {
+		background-color: #1d1d1c;
 	}
 
 	/* Style for header */
@@ -277,10 +345,6 @@ footer a {
 		text-shadow: 0.2em 0.1em #3d3d35;
 	}
 
-	/* Style specifies border, box shadow, and margin for the main element */
-	main {
-		background-color: #1d1d1c;
-	}
 
 	/* Style specifies left and right padding for paragraph elements within the main element */
 	main p {
@@ -340,6 +404,23 @@ footer a {
 	main article h2 {
 		color: #000000;
 	}
+
+	table {
+		background-color: #ffffff;
+		width: 85%;
+	}
+	/* Style for table caption */
+	caption {color: #ffffff;}
+
+	/* Desktop style for form element */
+	form {
+		background-color: #ffffff;
+		padding: 1em;
+	}
+
+	/* Desktop style for paragraphs within a form */
+	form p {color: #000000;}
+
 } /* End of Desktop media query */
 
 /* Style rules for psuedo-classes */
