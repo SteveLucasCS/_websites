@@ -1,0 +1,131 @@
+/* Steve Lucas 6/5/2018 */
+
+/* Import Roboto font from google fonts */
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+/* MOBILE STYLING BEGINS */
+
+body {
+    margin: 4% 4% 4% 4%;
+    background-color: #042196;
+}
+
+
+/*Style for all content within the outwrapper. As of this version,
+all content within the body is in the outerwrapper. */
+#outerwrapper {
+    width: 100%;
+    font-family: 'Roboto', sans-serif, futura, calibri;
+}
+
+/* Style for text content within the header */
+header {
+    position: relative;
+    margin-right: 0.2em;
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    font-size: 0.7em;
+    border: 0.2em black solid;
+
+}
+
+/* Style for text within the header element */
+#headerText {
+    margin-left: 0;
+    text-align: center;
+}
+
+
+
+
+/* Style for myname class NOT using web-hosted font.
+/*.myname {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 3em;
+    padding-left: 0%;
+}*/
+
+/* Style for the primary 'Steve Lucas' text in the header of the page. */
+.myname {
+    font-family: 'Roboto', sans-serif, futura, calibri;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+/* Styles the image in the header (headshot.png) This is a retina image. */
+header img {
+    object-fit: contain;
+    object-position: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+    max-width: 30%;
+    max-height: 100%;
+    height: auto;
+    max-height: 100%;
+    display: inline-block;
+}
+
+.small {
+    display: block;
+    width: 100%;
+    margin: 0 0;
+}
+.small nav {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.small nav ul {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 6.5em 6.5em 6.5em;
+  grid-template-rows: 1.1em 1.1em;
+  justify-content: center;
+  padding: 0em;
+  list-style-type: none;
+}
+nav ul li {
+  background-color: #FFFFFF;
+  border: 0.15em black solid;
+  padding: 0.1em 0em 0em 0em;
+  font-size: 0.6em;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Style for main text body on the page. */
+#main {
+    font-size: 0.8em;
+    background-color: #FFFFFF;
+    padding: 1em 1em 1em 1em;
+    border: 0.2em black solid;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding-top: 0em;
+    margin-top: 0em;
+}
+
+/* Style for 'date' format text */
+.date {
+    text-align: center;
+}
+
+.mobile-wide {display: none;}
+.desktop { display: none; }
+.tablet {dispaly: none;}
+
+/* MOBILE STYLING ENDS */

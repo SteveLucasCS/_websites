@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- @author Steve Lucas v- 5/20/2018 -->
+<!-- Personal Portolio Assignment -->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Steve Lucas | Skills</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Steve Lucas, portfolio, cv, resume, skills, technology,
+    developer, front-end, back-end, full-stack, web design, C, C++, java, javascript,
+    manufacturing, machining">
+  <meta name="description" content="Steve Lucas is a diverse IT professional, with experience in
+    front-end and back-end web development, application development, ML, and information security.">
+    
+  <link rel="icon" href="favicon.ico">
+  <!-- import font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="header"> <!-- shown for tablet and up viewports -->
+    <h1>Steve Lucas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a><li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="#">Work Experience</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </nav>
+  </div> <!-- end header -->
+
+  <!-- different header for mobile viewports only -->
+  <div class="mobile-only">
+    <div class="mobile-header">
+      <h1>Steve Lucas</h1>
+      <a href="index.html">Home</a>
+      <div class="mobile-dropdown">
+        <button class="drop-button" onClick="openDropdown()">Navigation
+          <i class="fas fa-align-justify"></i> <!-- font awesome down arrow icon -->
+        </button>
+        <!-- dropdown-content is hidden until button is clicked -->
+        <div id="eduDropdown" class="dropdown-content">
+          <a href="about.html">About Me</a>
+          <a href="skills.html">Skills</a>
+          <a href="education.html">Education</a>
+          <a href="#">Work Experience</a>
+          <a href="#">Contact Me</a>
+          <a href="#">Resume</a>
+        </div> <!-- end dropdown-content" -->
+      </div> <!-- end mobile-dropdown -->
+    </div> <!-- end mobile-header class -->
+  </div> <!-- end mobile-only class -->
+
+  <div class="main">
+    <div id="skills-page">
+      <article>
+        <h1>My Skills and Technologies</h1>
+        <section>
+          <p class="tablet">I have a truely unique and broad set of skills and experience in several fields. This range shows my adaptability, and eagerness and aptitude to
+          learn continuously and improve myself. I am a highly logical and analytical person, leading to a very 'scientific' world view. I am always curious
+          about the world around, especially how things work. This lead me to world of engineering and computer science, where I can exercise my creativity
+          and problem solving skills every day.</p> <!-- shown on desktop only -->
+          <p>As a computer science professional with an understanding of engineering, manufacturing, security,
+          and modern business, I always see the big picture and seek to understand the world around me. While a list of technical skills may be necessary
+          for a job, my desire for self-growth and learning will be my most important asset in my career.</p>
+        </section>
+      </article>
+
+      <article>
+        <h2>Software Engineering</h2>
+        <section class="tablet">
+          <p>My primary focus is software engineering. I have the most experience with <span>C</span>, <span>Java</span>, and <span>JavaScript</span>.
+          I am comfortable with <span>Python</span> and have some experience using it for <span>machine learning</span> programs. I am currently learning how to develop mobile
+          apps in my spare time.<br>
+          Most of my programming experience is with <span>Java</span>, writing desktop applications. The ease of use of Java allows me to get work done quickly,
+          and its versatility means it can be used for most applications.
+          <br>I use <span>JavaScript</span> for web applications or simple scripts, as well as any desktop application where it is more efficient than Java.
+          <br>I have also used <span>Python</span> for <span>machine learning</span>, particularly <span>neural network</span>, programs, such as an AI for Super-Tic-Tac-Toe. While not a complicated
+          program, it demonstrates that I have an understanding of how neural nets work, and is a door to the countless applications for machine learning technology.
+          <br>My experience with <span>C</span> allows me to write low-level programs that interact closely with the operating system and hardware. C may be the
+          best option when a progam has to be well optimized and efficient, and as infrequent as these niche cases may be, it is an important
+          skill to have.
+          <br>To view a small sample of the projects I have worked on for school, visit my <span><a id="github" href="https://github.com/SteveLucasCS">GitHub page.</a></span></p>
+        </section>
+        <section>
+          <table>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+              <th>Experience</th>
+            </tr>
+            <tr>
+              <td>App Development</td>
+              <td>Java, C, C++</td>
+              <td>2000+ Hours</td>
+            </tr>
+            <tr>
+              <td>Web Development</td>
+              <td>HTML5, CSS, NodeJS, PHP</td>
+              <td>300+ Hours</td>
+            </tr>
+            <tr>
+              <td>Scripting and ML</td>
+              <td>JavaScript, Phython, Tensorflow, Bash</td>
+              <td>200+ Hours</td>
+            </tr>
+          </table>
+        </section>
+      </article>
+
+      <article>
+        <h2>IT Administration</h2>
+        <section class="tablet">
+          <p>I have a unique combination of experience with network and system administration, information assurance, law enforcement, homeland security, and
+          infrastructure protection.<br>My knowledge of network administration includes; setting up networks, monitoring traffic, managing permissions,
+          and troubleshooting and solving software, network, and hardware problems.<br>My homeland security and law enforcement experience has taught me
+          threat analysis, vulnerability assessment, infrastructure protection, physical security, and personel security policies.<br>This gives me an edge
+          in my prospective field of information security, where I also have knowledge and experience around cyber security. Though I have limited experience
+          with penetration testing myself, I understand the tools, methods, and logic of hacking and cracking. I can identify network and system vulnerabilities,
+          and am sure to always make any code I write as secure as possible.</p>
+        </section>
+        <section>
+          <table>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+              <th>Experience</th>
+            </tr>
+            <tr>
+              <td>Networking</td>
+              <td>Setup, Configuration, Maintnence</td>
+              <td>100+ Hours</td>
+            </tr>
+            <tr>
+              <td>Support</td>
+              <td>Troubleshooting, Solutions, Recovery</td>
+              <td>500+ Hours</td>
+            </tr>
+            <tr>
+              <td>Security</td>
+              <td>Network, System, Risk Analysis, Preparedness</td>
+              <td>200+ Hours</td>
+            </tr>
+          </table>
+        </section>
+      </article>
+
+      <article>
+        <h2>Business</h2>
+        <section class="tablet">
+          <p>I have seen both the corporate world and small business entrepreneurship, and my first-hand immersion has taught me much more than any class ever could.
+          I've witnessed great leaders, proper communication, and efficient practices that I seek to emulate in myself. I believe my work ethic, growth mindset,
+          and empathy are my personal strengths, and it is evident in the work I do; always striving for perfection and pushing my limits.<br>
+          I can use all Microsoft Office programs to their full potential, as well as experience with Photoshop and 3D modeling and CAD software. I have a lot of
+          experience with Salesforce as an administrator, including developing new tools with the Salesforce sandbox and their API. I also took time to understand
+          the user experience and how spoke with sales personel to understand how I could make tools that were efficient and right for them.<br>
+          My knowledge of SQL has saved me many hours, and likely prevented many errors, compared to using MS Excel. I have a valuable experience working with
+          proprietary databases and software, as well as a multitude of APIs.<br>My business acumen seperates me from other's in the computer science industry,
+          along with a passion for studying economics.</p>
+        </section>
+        <section>
+          <table>
+            <tr>
+              <th>Category</th>
+              <th>Skills</th>
+              <th>Experience</th>
+            </tr>
+            <tr>
+              <td>Process Analysis</td>
+              <td>Lean Six Sigma, Prototyping, Optimization</td>
+              <td>CDW PSCC Team's Program Initiatives</td>
+            </tr>
+            <tr>
+              <td>Customer Service</td>
+              <td>Partner Management, Sales Support, Customer Interaction</td>
+              <td>CDW Partner Management and Sales Support, Law Enforcement</td>
+            </tr>
+            <tr>
+              <td>Office Applications</td>
+              <td>MS Office, Salesforce, SQL, Proprietary Software</td>
+              <td>CDW, Personal Use</td>
+            </tr>
+          </table>
+        </section>
+      </article>
+
+      <article>
+        <h2>Manufacturing Engineering</h2>
+        <section class="tablet">
+          <p>I have experience with the mechanical design side of engineering, as well as the manufacturing processes aspect.<br>
+          For CAD, I have used Creo Pro-Engineer 3 extensively. I also have limited experience with MATLAB and materials science.<br>
+          My education in manufacturing engineering taught me how to use nearly every tool in a machine shop, and opened my eyes
+          to true complexity and precision of manufacturing. From casting a plaque to making a threaded bolt, I learned how to
+          <span>weld, cast, mold, CNC, thread, and cut material</span>. I am comfortable with a <span>laithe, drill press, band saw, belt machines,
+            oxy acetylene tools, plasma cutters, and more.</span><br>
+          Not only did I enjoy this class endlessly, but it also gave me a greater appreciation for what goes on on a plant floor or
+          in a machine shop, and that makes me a great fit in a manufacturing industry.</p>
+        </section>
+        <section>
+          <table>
+            <tr>
+              <th>Category</th>
+              <th>skills</th>
+              <th>Experience</th>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>CAD, Modeling, Analysis</td>
+              <td>Creo 3, 400+ Hours</td>
+            </tr>
+            <tr>
+              <td>Processing</td>
+              <td>Casting, Molding, Welding, Carpentry</td>
+              <td>100+ Hours</td>
+            </tr>
+            <tr>
+              <td>Machining</td>
+              <td>CNC, Lathe, Drill Press, Band and Table Saws, Grinding, Plasma Cutting, Oxy Acetalyne Cutting/Welding</td>
+              <td>500+ Hours</td>
+            </tr>
+          </table>
+        </section>
+      </article>
+    </div> <!-- end skills-page id -->
+  </div> <!-- end main -->
+
+  <div class="footer">
+    <div id="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </div> <!-- end footer nav -->
+  </div> <!-- end footer -->
+
+<script src="scripts/scripts.js" ></script>
+</body>
+</html>

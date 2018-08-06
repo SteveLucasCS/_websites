@@ -107,7 +107,7 @@ input, select, textarea { display: block; margin-bottom: 1em; }
 label { display: block; }
 
 /* Style rule for unordered lists within a form */
-form ul { list-style-type: none; }
+form ul { list-style-type: none; margin-left: 2em;}
 
 /* Style rule for the video class (contains video element)*/
 .video {

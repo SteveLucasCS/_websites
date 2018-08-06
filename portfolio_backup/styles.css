@@ -1,0 +1,460 @@
+/* Import Roboto font from google fonts */
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+/* All content on a page is within the body container */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page headings outside of articles ("My Education" etc.) */
+.main h1 {
+    font-size: 1.3em;
+    color:  rgb(0,0,153);
+    text-align: center;
+}
+article {margin: 1.5em auto;}
+
+article h1 {color: rgb(0,0,153);}
+
+article h2 {color: rgb(0,0,153); margin: 0.5em auto;}
+
+article p {margin: 0;}
+
+/* Removes default padding/margins from sections */
+article section {padding: 0; margin: 0;}
+
+
+.header {
+    background-color: rgb(0, 0, 153);
+}
+
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#footer-nav {
+    width: 100%;
+    background-color: rgb(0,0,153);
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    margin-top: 5%;
+}
+
+#footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#footer-nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#footer-nav ul li {
+    text-align: center;
+}
+
+
+/* mobile-only header and navbar */
+.mobile-header {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 153);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.mobile-header a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+.mobile-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown button */
+.drop-button {
+    background-color: #FFFFFF;
+    font-size: 1em;
+    border-style: none;
+    color: rgb(0, 0, 153);
+}
+
+/* dropdown-content is hidden until button is pressed */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+    padding: 1em;
+    min-width: 8em;
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 153);
+    display: block;
+    text-align: center;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(0, 0, 153);
+    color: #FFFFFF;
+}
+
+/* called by openDropdown() to display dropdown content */
+.show { display: block; }
+
+
+/******************************************************************
+* main body of content
+******************************************************************/
+/* generic styling for main element (most pages overwrite this) */
+.main {
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+#index-page {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#index-page ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* List items on home page (each li includes header and p) */
+/* Sets margin for all list items */
+#index-page ul li {
+    margin: 1em 10%;
+}
+
+#index-page ul li h2 {
+    margin: 0;
+    color: rgb(0,0,153);
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+
+#index-page ul li p {
+    margin: 0.25em 1.5em 0 1.5em;
+}
+
+/* styles text color and decoration of the text on index page */
+/* 4 headers and their subtext are wrapped in hyperlinks to skills page */
+#index-page ul li a {text-decoration: none;}
+
+#index-page ul li a:visited {color: #000000;}
+
+#index-page ul li a:link {color: #000000;}
+
+/* Index page main content ***************************************/
+#index-page .mobile-only .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+
+/* big ugly picture on the homepage */
+#index-page .mobile-only .container figure {
+    height: 100%;
+    margin: 0;
+}
+
+#index-page .mobile-only .container img {
+    height: 150px;
+    border-radius: 20%;
+    width: auto;
+    max-height: 30%;
+}
+
+#index-page .mobile-only .container p {
+    text-align: center;
+    padding: 5% 1em;
+}
+
+
+
+
+/*** Skills Page ***************************************************/
+/* Mobile and tablet viewports only display tables */
+/* Skills page outer wrapper */
+#skills-page {width: 100%;}
+
+/* Table styling */
+#skills-page table, #skills-page td, #skills-page th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+#skills-page table {width: 100%;}
+
+/* Padding in each cell of a table */
+#skills-page td, th {padding: 0.5em;}
+
+/*** About Page *****************************************************/
+/* Styles the text at the bottom of the article that links to
+* the skills page. The whole sentence is a link, but only
+* the word "Skills" is styled to look like a link */
+#about-page article a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Styles the word "Skills" in the text at the bottom of the article */
+#about-page article a span {
+    color: rgb(0, 0, 128);
+    text-decoration: underline;
+}
+
+/*** Education Page **************************************************/
+
+/* removes border around table */
+#education-page table, #education-page td, #education th {border: none;}
+
+/* Size and layout of table on education page */
+#education-page table {
+    width: 100%;
+    padding-right: 2em;
+    margin-bottom: 1em;
+}
+
+/* Styles text (majors) in table */
+#education-page th {text-align: left;}
+
+/* Styles dates in the table */
+#education-page td {text-align: right;}
+/********* Hidden Elements *****************************************/
+/*tablet and desktop header is hidden */
+.header{ display: none; }
+/* school logos hidden */
+.logo { display: none; }
+.tablet { display: none; }
+.skills-image { display: none;}
+.desktop {display: none;}
+
+
+/* Breakpoint for horizontal navbar (1000px) */
+@media only screen and (min-width: 1100px) {
+
+    /**********************************************************************
+    * Header styling
+    * @parent: body
+    * @Contains: h1 ("Steve Lucas") and navbar (ul)
+    **********************************************************************/
+    /* displays tablet content */
+    .tablet {display: block;}
+    .logo {display: inline-block;}
+    .skills-image {display: block;}
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 1.2em;
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        margin-bottom: 0;
+        justify-content: space-around;
+    }
+
+    /* Name text in the header */
+    .header h1 {
+        width: 10em;
+        text-align: left;
+        margin: 0;
+        margin-left: 2%;
+        padding: 0;
+        color: #FFFFFF;
+        font-size: 1.5em;
+
+    }
+    /* Navbar styling */
+    /* Navbar consists of list of links to other pages */
+    nav {width: 100%; margin-right: 2%;}
+
+    nav a {text-decoration: none; color: #FFFFFF;}
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {padding: 0; margin: 0;}
+
+    /*** Home Page ***************************************************/
+    #index-page .main {width: 100%; margin: 0;}
+
+    #index-page .container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2%;
+        font-size: 1.2em;
+    }
+
+    /* big ugly picture on the homepage */
+    #index-page .container figure {
+        height: 100%;
+        margin: 0;
+    }
+
+    #index-page .container img {
+        height: 250px;
+        border-radius: 20%;
+        width: auto;
+        max-height: 30%;
+    }
+
+    #index-page .container p {
+        text-align: center;
+        font-size: 2em;
+        padding-top: 0;
+        margin-right: 10%;
+    }
+    #about-page ul {list-style-type: none;}
+    #about-page ul li p {margin-left: 2em;}
+
+    #skills-page article {margin: 3em auto;}
+    #skills-page table {margin-top: 2em;}
+
+    #education-page article {
+        margin: 4em auto;
+    }
+    #education-page .logo {
+        width: 300px;
+        display: block;
+        float: left;
+    }
+    #gvsu-logo {
+        width: 275px;
+        height: auto;
+
+    }
+    #lssu-logo {
+        width: 168px;
+        height: auto;
+        margin-left: 53px;
+        margin-right: 53px;
+    }
+    #education-page h2 {
+        margin: auto;
+        margin-bottom: 1em;
+
+    }
+    #education-page table {
+        width: auto;
+        margin: auto;
+        display: block;
+        padding: 0;
+    }
+    #education-page section p{
+        display: block;
+        clear: both;
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    /*** Index Page **************************************************/
+    /* 4 boxes with an image as background for each of them, linking to
+    the skills page */
+
+    #index-page .container ul {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        align-items: center;
+    }
+
+    #index-page .container li {
+        width: 22.5%;
+        height: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 0.5em solid rgb(0, 0, 153);
+        overflow: hidden;
+        margin: 0;
+    }
+    #index-page .container ul li img {
+        width: 100%;
+        max-height: 70%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    #index-page .container ul li a {
+        text-decoration: none;
+         color: rgb(0, 0, 153);
+    }
+    #index-page .container ul li h2 {
+        text-align: center;
+        height: 25%;
+        font-size: 1.5em;
+        padding-top: 5%;
+    }
+
+    /*Moves portrait closer to the center */
+    #portrait { margin-left: 10%; }
+
+    /* Hide content for other viewports */
+    .desktop {display: none;}
+    .mobile-only {display: none;}
+}
+
+@media only screen and (min-width: 1600px) {
+
+    /* Larger font on home page */
+    #index-page .container p { font-size: 2.5em; }
+
+    #index-page .container ul li h2 {font-size: 2em;}
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- @author Steve Lucas v- 5/20/2018 -->
+<!-- Personal Portolio Assignment -->
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Steve Lucas | Education</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Steve Lucas, portfolio, cv, resume, I.T., software development,
+    web development, information security, manufacturing, business, Grand Valley State University,
+    GVSU, Lake Superior State University, LSSU, Computer Science, Homeland Security, College, Education">
+  <meta name="description" content="Steve Lucas is a Computer Science student at Grand Valley State University,
+    with previous education in Homeland Security and Mechanical Engineering at Lake Superior State University.">
+
+  <link rel="icon" href="favicon.ico">
+  <!-- import font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+  integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="header"> <!-- shown for tablet and up viewports -->
+    <h1>Steve Lucas</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a><li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="#">Work Experience</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </nav>
+  </div> <!-- end header -->
+
+  <!-- different header for mobile viewports only -->
+  <div class="mobile-only">
+    <div class="mobile-header">
+      <h1>Steve Lucas</h1>
+      <a href="index.html">Home</a>
+      <div class="mobile-dropdown">
+        <button class="drop-button" onClick="openDropdown()">Navigation
+          <i class="fas fa-align-justify"></i> <!-- font awesome down arrow icon -->
+        </button>
+        <!-- dropdown-content is hidden until button is clicked -->
+        <div id="eduDropdown" class="dropdown-content">
+          <a href="about.html">About Me</a>
+          <a href="skills.html">Skills</a>
+          <a href="#">Work Experience</a>
+          <a href="#">Contact Me</a>
+          <a href="#">Resume</a>
+        </div> <!-- end dropdown-content" -->
+      </div> <!-- end mobile-dropdown -->
+    </div> <!-- end mobile-header class -->
+  </div> <!-- end mobile-only class -->
+
+
+  <div class="main">
+    <!-- Portrait Image -->
+    <div id="education-page">
+      <h1>My Education</h1>
+      <article> <!-- gvsu article -->
+
+        <section class="logo">
+          <img id="gvsu-logo" src="images/gvsu.png" alt="GVSU Logo">
+        </section> <!-- end logo section -->
+
+        <section class="dates">
+          <h2>Grand Valley State University</h2>
+          <table> <!-- table displays graduation dates and major -->
+            <tr>
+              <th>Computer Science B.S.</th>
+              <td>2018 - 2020 (Expected)</td>
+            </tr>
+            <tr>
+              <th>Liberal Arts A.S.</th>
+              <td>2018 - 2020 (Expected)</td>
+            </tr>
+          </table>
+        </section> <!-- end of dates class -->
+
+        <section class=text-block>
+          <p>At Grand Valley's cutting-edge campus, I have had the opportunity to learn the basics of Java and Web Developement so far,
+          as well as growing as a person thanks to the diverse array of general education classes. In the coming semesters, I will
+          learn about 3D design, information assurance, database structures and algorithms, and many other skills vital to the IT
+          professional and full-stack developer.</p>
+        </section> <!-- end text-block class -->
+      </article> <!-- end of gvsu article -->
+
+      <article> <!-- lssu article -->
+        <section class="logo">
+          <img id="lssu-logo" src="images/lssu.png" alt="LSSU Logo">
+        </section> <!-- end logo class -->
+
+        <section class="dates">
+          <h2>Lake Superior State University</h2>
+          <table>
+            <tr>
+              <th>No Degree (86 credits)</th>
+              <td>2014 - 2017</td>
+            </tr>
+            <tr>
+              <th>Mechnical Engineering</th>
+              <td>2016 - 2017</td>
+            </tr>
+            <tr>
+              <th>Homeland Security</th>
+              <td>2014 - 2016</td>
+            </tr>
+          </table>
+        </section> <!-- end dates class -->
+
+        <section class="text-block">
+          <p>I started my college journey at Lake Superior State University, a campus at the last exit before the International Bridge to Canada.
+          I entered my freshman year with the plan of graduating in three years with a B.A in Homeland Security, with the goal of helping
+          people as a police officer, and hopefully an eventual federal agent. I gained vital experience in the law enforcement field,
+          including an internship with the Cook County Sheriff's Office in Chicago, the second largest department in the country, and a year of working
+          as a Public Safety officer for my university. After these two years however, it was clear to me that it wasn't the right field for me.
+          I craved mental stimulation; an outlet for my creativity and a career that involved problem solving on a daily basis.<br><br>
+          I then decided to change my field of study to Mechanical Engineering. I found great satisfaction in making things, and loved
+          the challenging nature of the courses. In this year of my studies, I learned manufacturing processes, CAD basics, and the
+          basics of materials science. Then, crucially, I took a 'C' Programming course required for engineering, and found I absolutely loved
+          programming. It was a way to make whatever you can imagine from scratch; the perfect test of my creativity, and a field
+          on the frontlines of solving the problems of today and tomorrow. After I found this love for programming, I made the decision to
+          change my major to Compuer Science, and transfer to Grand Valley State University, an profoundly esteemed institution closer to home.</p>
+        </section> <!-- end text-block class -->
+
+      </article> <!-- end of lssu article -->
+    </div> <!-- end container -->
+  </div> <!-- end main -->
+
+  <div class="footer">
+    <div id="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Resume</a></li>
+      </ul>
+    </div> <!-- end footer nav -->
+  </div> <!-- end footer -->
+
+<script src="scripts/scripts.js" ></script>
+</body>
+</html>
